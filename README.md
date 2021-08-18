@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github]()
+- Solution URL: [Github](https://github.com/juanptsanchez/3-column-cards)
 - Live Site URL: [Netlify](https://3-column-card-landing.netlify.app/)
 
 ### Built with
