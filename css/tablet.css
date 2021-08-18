@@ -1,0 +1,73 @@
+/* ================================================
+GLOBAL
+================================================ */
+html , body{
+    height: 100%;
+}
+body {
+    font-family: var(--bodyFont);
+    font-size: 1.5rem;
+    background-color: var(--veryLightGray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    text-decoration: none;
+}
+h2 {
+    font-family: var(--secondaryFont);
+    text-transform: uppercase;
+}
+.principal {
+    max-width: 768px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ================================================
+CARDS
+================================================ */
+.card-title {
+    color: var(--veryLightGray);
+    font-size: 4rem;
+    margin: 1.5rem 0;
+}
+.card {
+    height: 100%;
+    width: 25%;
+    transition: width .3s ease-in-out;
+    -webkit-transition: width .3s ease-in-out;
+    -moz-transition: width .3s ease-in-out;
+    -ms-transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    padding: 3rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.activa {
+    width: 50%;
+}
+.card-txt {
+    color: var(--transparentWhite);
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    flex-grow: 1;
+}
+.sedans-card {
+    border-radius: 1rem 0 0 1rem;
+}
+.luxury-card {
+    border-radius: 0 1rem 1rem 0;
+}
+
+/* BUTTON */
+.btn {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}

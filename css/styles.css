@@ -1,0 +1,115 @@
+/* ========================================= 
+VARIABLES FONTS / COLORS
+=========================================== */
+:root {
+/* FONTS */
+--bodyFont: 'Lexend Deca', sans-serif;
+--secondaryFont: 'Big Shoulders Display', cursive;
+
+/* PRIMARY COLORS */
+--brightOrange: hsl(31, 77%, 52%);
+--darkCyan: hsl(184, 100%, 22%);
+--veryDarkCyan: hsl(179, 100%, 13%);
+
+/* NEUTRAL COLORS */
+--transparentWhite: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+--veryLightGray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+/* ========================================= 
+BOX-SIZING / FONT SIZE
+=========================================== */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* ================================================
+GLOBAL
+================================================ */
+body {
+    font-family: var(--bodyFont);
+    font-size: 1.5rem;
+    background-color: var(--veryLightGray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    text-decoration: none;
+}
+h2 {
+    font-family: var(--secondaryFont);
+    text-transform: uppercase;
+}
+.principal {
+    max-width: 768px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 3rem;
+}
+
+/* ================================================
+CARDS
+================================================ */
+.card {
+    padding: 4.5rem 4rem;
+}
+.sedans-card {
+    background-color: var(--brightOrange);
+    border-radius: 1rem 1rem 0 0;
+}
+.suvs-card {
+    background-color: var(--darkCyan);
+}
+.luxury-card {
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 0 1rem 1rem;
+}
+.card-title {
+    color: var(--veryLightGray);
+    font-size: 4rem;
+}
+.card-txt {
+    color: var(--transparentWhite);
+    word-spacing: .6rem;
+    line-height: 2rem;
+}
+
+/* BUTTON */
+.btn {
+    background-color: var(--veryLightGray);
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    display: inline-block;
+    margin-top: 1.5rem;
+    border: 2px solid var(--veryLightGray);
+}
+.sedans-card .btn {
+    color: var(--brightOrange);
+}
+.sedans-card .btn:hover {
+    color: var(--veryLightGray);
+    background-color: var(--brightOrange);
+}
+.suvs-card .btn {
+    color: var(--darkCyan);
+}
+.suvs-card .btn:hover {
+    color: var(--veryLightGray);
+    background-color: var(--darkCyan);
+}
+.luxury-card .btn {
+    color: var(--veryDarkCyan);
+}
+.luxury-card .btn:hover {
+    color: var(--veryLightGray);
+    background-color: var(--veryDarkCyan);
+}
